@@ -14,4 +14,5 @@ enum Colors: Int {
     
     case black=0x000000
     case white=0xFFFFFF
+    case basicBackground=0xF9FFFC
 }

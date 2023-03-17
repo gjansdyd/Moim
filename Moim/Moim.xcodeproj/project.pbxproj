@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		75B3CA4FBD1AFC8BA7D74CFE /* Pods_MoimTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2154D7FB1D91D2EAC74609 /* Pods_MoimTests.framework */; };
 		8087E149D5F6A83A9B724534 /* Pods_Moim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73F4DEFB25C0B9113B07352 /* Pods_Moim.framework */; };
+		BA2A2AD529C455120016F8A7 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A2AD429C455120016F8A7 /* AppleSignIn.swift */; };
+		BA2A2ADA29C457220016F8A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A2AD929C457220016F8A7 /* MainViewController.swift */; };
+		BA2A2ADE29C459410016F8A7 /* Moim.json in Resources */ = {isa = PBXBuildFile; fileRef = BA2A2ADD29C459410016F8A7 /* Moim.json */; };
 		BA78B5D429C2F381000F29E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B5D329C2F381000F29E0 /* AppDelegate.swift */; };
 		BA78B5D629C2F381000F29E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B5D529C2F381000F29E0 /* SceneDelegate.swift */; };
 		BA78B5DD29C2F382000F29E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA78B5DC29C2F382000F29E0 /* Assets.xcassets */; };
@@ -29,7 +32,6 @@
 		BA78B62A29C307FE000F29E0 /* LoginButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62929C307FE000F29E0 /* LoginButtonViewModel.swift */; };
 		BA78B62E29C30A59000F29E0 /* Extensions+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62D29C30A59000F29E0 /* Extensions+UILabel.swift */; };
 		BA78B63029C30AC9000F29E0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62F29C30AC9000F29E0 /* Fonts.swift */; };
-		BA9C132729C4170400B0726E /* LoginTitleLogo.json in Resources */ = {isa = PBXBuildFile; fileRef = BA9C132629C4170400B0726E /* LoginTitleLogo.json */; };
 		BAC3BD1829C4272E00A5DE07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAC3BD1729C4272E00A5DE07 /* GoogleService-Info.plist */; };
 		C724664BB7E63AF7B2376869 /* Pods_Moim_MoimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBD5EAA69E9059F46B49102 /* Pods_Moim_MoimUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,10 @@
 		837050204A061CB2DDCE35A9 /* Pods-Moim-MoimUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moim-MoimUITests.release.xcconfig"; path = "Target Support Files/Pods-Moim-MoimUITests/Pods-Moim-MoimUITests.release.xcconfig"; sourceTree = "<group>"; };
 		97A474E65ED5C698BD3D36B8 /* Pods-Moim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moim.release.xcconfig"; path = "Target Support Files/Pods-Moim/Pods-Moim.release.xcconfig"; sourceTree = "<group>"; };
 		A9F68959E2D73B3A6ED343C7 /* Pods-MoimTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoimTests.release.xcconfig"; path = "Target Support Files/Pods-MoimTests/Pods-MoimTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA2A2AD129C452780016F8A7 /* Moim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Moim.entitlements; sourceTree = "<group>"; };
+		BA2A2AD429C455120016F8A7 /* AppleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
+		BA2A2AD929C457220016F8A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BA2A2ADD29C459410016F8A7 /* Moim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Moim.json; sourceTree = "<group>"; };
 		BA78B5D029C2F381000F29E0 /* Moim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA78B5D329C2F381000F29E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA78B5D529C2F381000F29E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +89,6 @@
 		BA78B62929C307FE000F29E0 /* LoginButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonViewModel.swift; sourceTree = "<group>"; };
 		BA78B62D29C30A59000F29E0 /* Extensions+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UILabel.swift"; sourceTree = "<group>"; };
 		BA78B62F29C30AC9000F29E0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		BA9C132629C4170400B0726E /* LoginTitleLogo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoginTitleLogo.json; sourceTree = "<group>"; };
 		BAC3BD1729C4272E00A5DE07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C73F4DEFB25C0B9113B07352 /* Pods_Moim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A2422780AC72D84051E483 /* Pods-Moim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moim.debug.xcconfig"; path = "Target Support Files/Pods-Moim/Pods-Moim.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +132,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA2A2AD629C456970016F8A7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BA2A2AD929C457220016F8A7 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		BA78B5C729C2F381000F29E0 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +165,7 @@
 		BA78B5D229C2F381000F29E0 /* Moim */ = {
 			isa = PBXGroup;
 			children = (
+				BA2A2AD129C452780016F8A7 /* Moim.entitlements */,
 				BA78B60929C2F467000F29E0 /* Resources */,
 				BA78B61429C2F89A000F29E0 /* Enums */,
 				BA78B60629C2F44C000F29E0 /* Models */,
@@ -187,6 +201,7 @@
 				BA78B61229C2F62E000F29E0 /* ViewController.swift */,
 				BA78B60E29C2F590000F29E0 /* Launch */,
 				BA78B60F29C2F59C000F29E0 /* Login */,
+				BA2A2AD629C456970016F8A7 /* Main */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +300,7 @@
 		BA78B62429C307C7000F29E0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				BA2A2AD429C455120016F8A7 /* AppleSignIn.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -300,7 +316,7 @@
 		BA9C132329C415D900B0726E /* Lotties */ = {
 			isa = PBXGroup;
 			children = (
-				BA9C132629C4170400B0726E /* LoginTitleLogo.json */,
+				BA2A2ADD29C459410016F8A7 /* Moim.json */,
 			);
 			path = Lotties;
 			sourceTree = "<group>";
@@ -427,10 +443,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9C132729C4170400B0726E /* LoginTitleLogo.json in Resources */,
 				BAC3BD1829C4272E00A5DE07 /* GoogleService-Info.plist in Resources */,
 				BA78B5E029C2F382000F29E0 /* LaunchScreen.storyboard in Resources */,
 				BA78B5DD29C2F382000F29E0 /* Assets.xcassets in Resources */,
+				BA2A2ADE29C459410016F8A7 /* Moim.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +580,7 @@
 				BA78B61D29C2FDED000F29E0 /* LoginButton.swift in Sources */,
 				BA78B61829C2F8ED000F29E0 /* Extensions+UIColor.swift in Sources */,
 				BA78B62229C2FF1E000F29E0 /* Extensions+UIButton.swift in Sources */,
+				BA2A2AD529C455120016F8A7 /* AppleSignIn.swift in Sources */,
 				BA78B61629C2F8A9000F29E0 /* Colors.swift in Sources */,
 				BA78B61F29C2FE0E000F29E0 /* CustomButton.swift in Sources */,
 				BA78B60C29C2F506000F29E0 /* LoginViewController.swift in Sources */,
@@ -572,6 +589,7 @@
 				BA78B5D429C2F381000F29E0 /* AppDelegate.swift in Sources */,
 				BA78B5D629C2F381000F29E0 /* SceneDelegate.swift in Sources */,
 				BA78B61B29C2FBAD000F29E0 /* Extensions+UIView.swift in Sources */,
+				BA2A2ADA29C457220016F8A7 /* MainViewController.swift in Sources */,
 				BA78B61129C2F5B2000F29E0 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -740,6 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Moim/Moim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4UY2M9TWUY;
@@ -772,6 +791,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Moim/Moim.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4UY2M9TWUY;

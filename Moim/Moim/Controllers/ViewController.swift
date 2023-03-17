@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
     
     internal func setUI() {
-        self.view.backgroundColor = Colors.white.val
+        self.view.backgroundColor = Colors.basicBackground.val
     }
     internal func setAdditionalUI() { }
     internal func setAdditionalUI<T>(_ value: T) { }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,7 +19,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = LaunchViewController()
+        
+        AppleSignIn.previousSignIn(completion: { [unowned self] userId in
+            guard let userId = userId else {
+                // 애플로그인 실패
+                GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                    guard let user = user, error == nil else {
+                        // Google로그인 실패
+                        print(error.debugDescription)
+                        self.window?.rootViewController = LoginViewController()
+                        return
+                    }
+                    
+                    // Google로그인 성공
+                    print(user.debugDescription)
+                    self.window?.rootViewController = MainViewController()
+                }
+                
+                return
+            }
+            
+            // 애플로그인 성공
+            self.window?.rootViewController = MainViewController()
+        })
+        
+        
+        
         window?.makeKeyAndVisible()
     }
 

@@ -9,6 +9,7 @@ import UIKit
 import Lottie
 import GoogleSignIn
 import FirebaseCore
+import AuthenticationServices
 
 class LoginViewController: ViewController {
     private unowned var animationView: LottieAnimationView!
@@ -16,7 +17,7 @@ class LoginViewController: ViewController {
     override func setUI() {
         super.setUI()
         
-        let animationView = LottieAnimationView(name: "LoginTitleLogo")
+        let animationView = LottieAnimationView(name: "Moim")
         animationView.loopMode = .loop
         animationView.contentMode = .scaleAspectFill
         animationView.animationSpeed = 2
@@ -64,12 +65,51 @@ class LoginViewController: ViewController {
         let clientId = GIDConfiguration(clientID: id)
         GIDSignIn.sharedInstance.signIn(with: clientId,
                                         presenting: self) { signInResult, error in
-            
             print(signInResult)
         }
     }
     
     private func appleLogin() {
         print("apple login button clicked")
+        
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+        
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.delegate = self
+        authorizationController.presentationContextProvider = self
+        authorizationController.performRequests()
+    }
+}
+
+
+//MARK: Apple 간편 로그인 시 필요한 extension
+extension LoginViewController: ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
+    
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        switch authorization.credential {
+        case let appleIDCredential as ASAuthorizationAppleIDCredential:
+            let userIdentifier = appleIDCredential.user
+            let fullName = appleIDCredential.fullName
+            let email = appleIDCredential.email
+            
+        case let passwordCredential as ASPasswordCredential:
+            let username = passwordCredential.user
+            let password = passwordCredential.password
+            
+        default:
+            break
+        }
+    }
+
+    //MARK: 애플 로그인 인증 에러
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        // Handle error.
+    }
+    
+    //PresentationContext UI를 어디에 띄울지 가장 적합한 뷰 앵커를 반환
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return self.view.window!
     }
 }

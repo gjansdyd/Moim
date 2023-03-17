@@ -12,18 +12,8 @@ import FirebaseCore
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-            guard let _ = error
-            else {
-                print(error.debugDescription)
-                return
-            }
-            
-            print(user.debugDescription)
-        }
         
         FirebaseApp.configure()
-        
         return true
     }
     
