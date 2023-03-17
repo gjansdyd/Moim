@@ -7,7 +7,9 @@ target 'Moim' do
 
   # Pods for Moim
   pod 'SnapKit'
-
+  pod 'Alamofire'
+  pod 'lottie-ios'
+  pod 'GoogleSignIn'
   target 'MoimTests' do
     inherit! :search_paths
     # Pods for testing

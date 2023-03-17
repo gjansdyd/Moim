@@ -6,44 +6,55 @@
 //
 
 import UIKit
+import Lottie
 
 class LoginViewController: ViewController {
+    private unowned var animationView: LottieAnimationView!
+    
     override func setUI() {
         super.setUI()
         
-        let titleLabel = UILabel()
-        self.view.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints({ make in
-            make.top.equalToSuperview().offset(75)
-            make.left.equalToSuperview().offset(20)
-            make.right.equalToSuperview().offset(-20)
-            make.height.equalTo(80)
-        })
-        titleLabel.setTitle(title: "MOIM",
-                            font: Fonts.heavy.get(size: 40),
-                            color: Colors.white.val)
+        let animationView = LottieAnimationView(name: "LoginTitleLogo")
+        animationView.loopMode = .loop
+        animationView.contentMode = .scaleAspectFill
+        animationView.animationSpeed = 2
+        animationView.play()
+        self.animationView = animationView
         
-        let googleVM = LoginButtonViewModel(type: .google,
-                                            bindClosure: { [weak self] in
+        let gVM = LoginButtonViewModel(type: .google,
+                                       bindClosure: { [weak self] in
             self?.googleLogin()
         })
-        let googleLoginButton = GoogleLoginButton(googleVM)
-        
-        let appleVM = LoginButtonViewModel(type: .apple,
-                                           bindClosure: { [weak self] in
+        let googleLoginButton = LoginButton(gVM)
+        let aVM = LoginButtonViewModel(type: .apple,
+                                       bindClosure: { [weak self] in
             self?.appleLogin()
         })
-        let appleLoginButton = AppleLoginButton(appleVM)
+        let appleLoginButton = LoginButton(aVM)
         
-        let stackView = UIStackView(arrangedSubviews: [googleLoginButton, appleLoginButton])
-        self.view.addSubview(stackView)
+        let stackView = UIStackView(arrangedSubviews: [googleLoginButton,
+                                                       appleLoginButton])
         stackView.axis = .vertical
         stackView.spacing = 8
-        stackView.snp.makeConstraints({ make in
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().inset(20)
-            make.width.equalTo(200)
+        stackView.alignment = .fill
+        stackView.distribution = .fillEqually
+        
+        let superStackView = UIStackView(arrangedSubviews: [animationView,
+                                                            stackView])
+        self.view.addSubview(superStackView)
+        superStackView.axis = .vertical
+        superStackView.spacing = 20
+        superStackView.alignment = .fill
+        superStackView.distribution = .fillProportionally
+        superStackView.snp.makeConstraints({ make in
+            make.centerX.centerY.equalToSuperview()
         })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.animationView.stop()
+        self.animationView.removeFromSuperview()
+        self.animationView = nil
     }
     
     private func googleLogin() {

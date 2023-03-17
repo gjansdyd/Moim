@@ -7,11 +7,11 @@
 
 import UIKit
 
-enum Colors: String {
+enum Colors: Int {
     var val: UIColor {
-        return UIColor(hex: self.rawValue) ?? .clear
+        return UIColor(rgb: self.rawValue)
     }
     
-    case black="0x000000"
-    case white="0xFFFFFF"
+    case black=0x000000
+    case white=0xFFFFFF
 }

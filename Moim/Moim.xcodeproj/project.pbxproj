@@ -29,6 +29,7 @@
 		BA78B62A29C307FE000F29E0 /* LoginButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62929C307FE000F29E0 /* LoginButtonViewModel.swift */; };
 		BA78B62E29C30A59000F29E0 /* Extensions+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62D29C30A59000F29E0 /* Extensions+UILabel.swift */; };
 		BA78B63029C30AC9000F29E0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62F29C30AC9000F29E0 /* Fonts.swift */; };
+		BA9C132729C4170400B0726E /* LoginTitleLogo.json in Resources */ = {isa = PBXBuildFile; fileRef = BA9C132629C4170400B0726E /* LoginTitleLogo.json */; };
 		C724664BB7E63AF7B2376869 /* Pods_Moim_MoimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBD5EAA69E9059F46B49102 /* Pods_Moim_MoimUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		BA78B62929C307FE000F29E0 /* LoginButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonViewModel.swift; sourceTree = "<group>"; };
 		BA78B62D29C30A59000F29E0 /* Extensions+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UILabel.swift"; sourceTree = "<group>"; };
 		BA78B62F29C30AC9000F29E0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		BA9C132629C4170400B0726E /* LoginTitleLogo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoginTitleLogo.json; sourceTree = "<group>"; };
 		C73F4DEFB25C0B9113B07352 /* Pods_Moim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A2422780AC72D84051E483 /* Pods-Moim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moim.debug.xcconfig"; path = "Target Support Files/Pods-Moim/Pods-Moim.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -238,6 +240,7 @@
 				BA78B5D329C2F381000F29E0 /* AppDelegate.swift */,
 				BA78B5D529C2F381000F29E0 /* SceneDelegate.swift */,
 				BA78B5DC29C2F382000F29E0 /* Assets.xcassets */,
+				BA9C132329C415D900B0726E /* Lotties */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -289,6 +292,14 @@
 				BA78B62929C307FE000F29E0 /* LoginButtonViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		BA9C132329C415D900B0726E /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C132629C4170400B0726E /* LoginTitleLogo.json */,
+			);
+			path = Lotties;
 			sourceTree = "<group>";
 		};
 		CCA03D7A866A0B80A6B496A0 /* Pods */ = {
@@ -413,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9C132729C4170400B0726E /* LoginTitleLogo.json in Resources */,
 				BA78B5E029C2F382000F29E0 /* LaunchScreen.storyboard in Resources */,
 				BA78B5DD29C2F382000F29E0 /* Assets.xcassets in Resources */,
 			);
