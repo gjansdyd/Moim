@@ -7,6 +7,8 @@
 
 import UIKit
 import Lottie
+import GoogleSignIn
+import FirebaseCore
 
 class LoginViewController: ViewController {
     private unowned var animationView: LottieAnimationView!
@@ -58,7 +60,13 @@ class LoginViewController: ViewController {
     }
     
     private func googleLogin() {
-        print("google login button clicked")
+        guard let id = FirebaseApp.app()?.options.clientID else { return }
+        let clientId = GIDConfiguration(clientID: id)
+        GIDSignIn.sharedInstance.signIn(with: clientId,
+                                        presenting: self) { signInResult, error in
+            
+            print(signInResult)
+        }
     }
     
     private func appleLogin() {
