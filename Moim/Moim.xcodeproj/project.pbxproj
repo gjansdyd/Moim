@@ -33,6 +33,16 @@
 		BA78B62E29C30A59000F29E0 /* Extensions+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62D29C30A59000F29E0 /* Extensions+UILabel.swift */; };
 		BA78B63029C30AC9000F29E0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78B62F29C30AC9000F29E0 /* Fonts.swift */; };
 		BAC3BD1829C4272E00A5DE07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAC3BD1729C4272E00A5DE07 /* GoogleService-Info.plist */; };
+		BACC47A929D6A43800D5E047 /* MoimUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47A829D6A43800D5E047 /* MoimUser.swift */; };
+		BACC47AB29D6A57300D5E047 /* MoimNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47AA29D6A57300D5E047 /* MoimNetworkService.swift */; };
+		BACC47AD29D6A5DD00D5E047 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47AC29D6A5DD00D5E047 /* RequestInterceptor.swift */; };
+		BACC47AF29D6A5F400D5E047 /* NetworkEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47AE29D6A5F400D5E047 /* NetworkEventMonitor.swift */; };
+		BACC47B129D6A60D00D5E047 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47B029D6A60D00D5E047 /* Extensions+String.swift */; };
+		BACC47B329D6A61C00D5E047 /* Extensions+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47B229D6A61C00D5E047 /* Extensions+Data.swift */; };
+		BACC47B529D6A69500D5E047 /* MoimUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47B429D6A69500D5E047 /* MoimUserViewModel.swift */; };
+		BACC47B729D6A72200D5E047 /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47B629D6A72200D5E047 /* NetworkType.swift */; };
+		BACC47B929D6A7B400D5E047 /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47B829D6A7B400D5E047 /* ResponseResult.swift */; };
+		BACC47BB29D6A85000D5E047 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC47BA29D6A85000D5E047 /* ErrorType.swift */; };
 		C724664BB7E63AF7B2376869 /* Pods_Moim_MoimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBD5EAA69E9059F46B49102 /* Pods_Moim_MoimUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +100,16 @@
 		BA78B62D29C30A59000F29E0 /* Extensions+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UILabel.swift"; sourceTree = "<group>"; };
 		BA78B62F29C30AC9000F29E0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		BAC3BD1729C4272E00A5DE07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BACC47A829D6A43800D5E047 /* MoimUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoimUser.swift; sourceTree = "<group>"; };
+		BACC47AA29D6A57300D5E047 /* MoimNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoimNetworkService.swift; sourceTree = "<group>"; };
+		BACC47AC29D6A5DD00D5E047 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		BACC47AE29D6A5F400D5E047 /* NetworkEventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEventMonitor.swift; sourceTree = "<group>"; };
+		BACC47B029D6A60D00D5E047 /* Extensions+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
+		BACC47B229D6A61C00D5E047 /* Extensions+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Data.swift"; sourceTree = "<group>"; };
+		BACC47B429D6A69500D5E047 /* MoimUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoimUserViewModel.swift; sourceTree = "<group>"; };
+		BACC47B629D6A72200D5E047 /* NetworkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
+		BACC47B829D6A7B400D5E047 /* ResponseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
+		BACC47BA29D6A85000D5E047 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		C73F4DEFB25C0B9113B07352 /* Pods_Moim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A2422780AC72D84051E483 /* Pods-Moim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moim.debug.xcconfig"; path = "Target Support Files/Pods-Moim/Pods-Moim.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				BA78B62429C307C7000F29E0 /* Login */,
+				BACC47B829D6A7B400D5E047 /* ResponseResult.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +256,9 @@
 		BA78B60729C2F456000F29E0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BACC47AA29D6A57300D5E047 /* MoimNetworkService.swift */,
+				BACC47AC29D6A5DD00D5E047 /* RequestInterceptor.swift */,
+				BACC47AE29D6A5F400D5E047 /* NetworkEventMonitor.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -246,6 +270,8 @@
 				BA78B61A29C2FBAD000F29E0 /* Extensions+UIView.swift */,
 				BA78B62D29C30A59000F29E0 /* Extensions+UILabel.swift */,
 				BA78B62129C2FF1E000F29E0 /* Extensions+UIButton.swift */,
+				BACC47B029D6A60D00D5E047 /* Extensions+String.swift */,
+				BACC47B229D6A61C00D5E047 /* Extensions+Data.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +311,8 @@
 				BA78B61529C2F8A9000F29E0 /* Colors.swift */,
 				BA78B62F29C30AC9000F29E0 /* Fonts.swift */,
 				BA78B62629C307D9000F29E0 /* LoginType.swift */,
+				BACC47B629D6A72200D5E047 /* NetworkType.swift */,
+				BACC47BA29D6A85000D5E047 /* ErrorType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -301,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				BA2A2AD429C455120016F8A7 /* AppleSignIn.swift */,
+				BACC47A829D6A43800D5E047 /* MoimUser.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -309,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				BA78B62929C307FE000F29E0 /* LoginButtonViewModel.swift */,
+				BACC47B429D6A69500D5E047 /* MoimUserViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -575,11 +605,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA78B61329C2F62E000F29E0 /* ViewController.swift in Sources */,
+				BACC47BB29D6A85000D5E047 /* ErrorType.swift in Sources */,
+				BACC47AF29D6A5F400D5E047 /* NetworkEventMonitor.swift in Sources */,
 				BA78B63029C30AC9000F29E0 /* Fonts.swift in Sources */,
 				BA78B62729C307D9000F29E0 /* LoginType.swift in Sources */,
 				BA78B61D29C2FDED000F29E0 /* LoginButton.swift in Sources */,
+				BACC47A929D6A43800D5E047 /* MoimUser.swift in Sources */,
 				BA78B61829C2F8ED000F29E0 /* Extensions+UIColor.swift in Sources */,
 				BA78B62229C2FF1E000F29E0 /* Extensions+UIButton.swift in Sources */,
+				BACC47B329D6A61C00D5E047 /* Extensions+Data.swift in Sources */,
+				BACC47B929D6A7B400D5E047 /* ResponseResult.swift in Sources */,
+				BACC47AD29D6A5DD00D5E047 /* RequestInterceptor.swift in Sources */,
 				BA2A2AD529C455120016F8A7 /* AppleSignIn.swift in Sources */,
 				BA78B61629C2F8A9000F29E0 /* Colors.swift in Sources */,
 				BA78B61F29C2FE0E000F29E0 /* CustomButton.swift in Sources */,
@@ -588,9 +624,13 @@
 				BA78B62A29C307FE000F29E0 /* LoginButtonViewModel.swift in Sources */,
 				BA78B5D429C2F381000F29E0 /* AppDelegate.swift in Sources */,
 				BA78B5D629C2F381000F29E0 /* SceneDelegate.swift in Sources */,
+				BACC47AB29D6A57300D5E047 /* MoimNetworkService.swift in Sources */,
+				BACC47B129D6A60D00D5E047 /* Extensions+String.swift in Sources */,
 				BA78B61B29C2FBAD000F29E0 /* Extensions+UIView.swift in Sources */,
 				BA2A2ADA29C457220016F8A7 /* MainViewController.swift in Sources */,
+				BACC47B729D6A72200D5E047 /* NetworkType.swift in Sources */,
 				BA78B61129C2F5B2000F29E0 /* LaunchViewController.swift in Sources */,
+				BACC47B529D6A69500D5E047 /* MoimUserViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

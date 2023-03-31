@@ -65,7 +65,14 @@ class LoginViewController: ViewController {
         let clientId = GIDConfiguration(clientID: id)
         GIDSignIn.sharedInstance.signIn(with: clientId,
                                         presenting: self) { signInResult, error in
-            print(signInResult)
+            //MARK: 서버로부터 userIdentifer던지기
+            guard nil != error,
+                  let userId = signInResult?.userID else {
+                //MARK: 에러가 난 경우 처리?
+                return
+            }
+            
+            //MARK: userId 서버에 던진 후 MoimUserModel수신하기
         }
     }
     
@@ -91,8 +98,8 @@ extension LoginViewController: ASAuthorizationControllerDelegate, ASAuthorizatio
         switch authorization.credential {
         case let appleIDCredential as ASAuthorizationAppleIDCredential:
             let userIdentifier = appleIDCredential.user
-            let fullName = appleIDCredential.fullName
-            let email = appleIDCredential.email
+            
+            //MARK: userId 서버에 던진 후 MoimUserModel수신하기
             
         case let passwordCredential as ASPasswordCredential:
             let username = passwordCredential.user
